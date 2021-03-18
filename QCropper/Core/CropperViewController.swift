@@ -25,7 +25,7 @@ public protocol CropperViewControllerDelegate: class {
 
 public extension CropperViewControllerDelegate {
     func cropperDidCancel(_ cropper: CropperViewController) {
-        cropper.navigationController?.popViewController(animated: true)
+        cropper.dismiss(animated: true, completion: nil)
     }
 }
 
